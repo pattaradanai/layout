@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nnnnew.androidproject.dummy.Expense"
+    android:background="#ec6767">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:weightSum="1">
+
+        <TextView
+
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="50dp"
+            android:text="THB"
+            android:textStyle="bold"
+            android:textColor="#fafafa"
+            android:id="@+id/THB"
+            android:paddingLeft="1sp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:layout_weight="0.53">
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="367dp"
+                android:id="@+id/list_view_expens"
+                android:textColor="#fafafa"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingRight="1dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:weightSum="1">
+
+        <TextView
+            android:paddingLeft="80sp"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:textStyle="bold"
+            android:textColor="#fafafa"
+            android:textSize="50dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="10000"
+            android:id="@+id/total_expens"
+            android:layout_gravity="right"
+            android:autoText="true" />
+    </LinearLayout>
+</RelativeLayout>
